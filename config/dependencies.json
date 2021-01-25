@@ -5,7 +5,7 @@
         "name": "SourceCred",
         "periods": [
             {
-                "startTime": "2020-12-14T16:58:22.355Z",
+                "startTime": "2020-12-14T00:00:00.000Z",
                 "weight": 0.05
             }
         ]
