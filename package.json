@@ -14,7 +14,8 @@
     "clean-all": "yarn clean && rimraf output",
     "load": "dotenv sourcecred load",
     "start": "dotenv sourcecred go --no-load && sourcecred serve",
-    "grain": "sourcecred grain"
+    "grain": "sourcecred grain",
+    "activate": "node scripts/activate.js"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
