@@ -1693,4 +1693,3 @@
 {"action":{"amount":"33130000000000000000","from":"cWeiR0BvTRJR6m77NEJzVw","memo":"https://zkscan.io/transactions/sync-tx:efb35ee41c65049e8b1c8779b5fb45e9f3a434b8e8e45c97ec22696b9c3fcba4","to":"mO3FKOU7dkON3XTyKan53Q","type":"TRANSFER_GRAIN"},"ledgerTimestamp":1611598450575,"uuid":"mARJd6UgOFrNcYeXLo4yYg","version":"1"}
 {"action":{"amount":"28440000000000000000","from":"U3UZ9Rc52Emj2cy9E5Eg3w","memo":"https://zkscan.io/transactions/sync-tx:187ed39257ee65bf2489a6ebeb61ac1bc21ca47cb14869235da25e5d32130e5b","to":"mO3FKOU7dkON3XTyKan53Q","type":"TRANSFER_GRAIN"},"ledgerTimestamp":1611598450575,"uuid":"8ZozfEM92p5J9nv8ie6VeA","version":"1"}
 {"action":{"amount":"812210000000000000000","from":"9BmCAuXyA98wpP1ceCAWzw","memo":"https://zkscan.io/transactions/sync-tx:93fe403c45282ffa233b4e61b713635b06a47c4309ca12eefc24c209cb70fc6a","to":"mO3FKOU7dkON3XTyKan53Q","type":"TRANSFER_GRAIN"},"ledgerTimestamp":1611598450575,"uuid":"8ZozfEM92p5J9nv8ie6VeA","version":"1"}
-
