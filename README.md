@@ -55,6 +55,6 @@ Cred will be calculated with a time lapse of 24 weeks.
 
 There are 2 possible distributions: **inmediate** and **balanced**. In order to reward past and present contributions DAppNode has chosen to implement a mix distribution with a rate of 3:1 in favor of balanced.
 
-"immediatePerWeek": 2500,
-"balancedPerWeek": 7500,
+"immediatePerWeek": 2000,
+"balancedPerWeek": 7000,
 "maxSimultaneousDistributions": 24
