@@ -15,7 +15,7 @@
     "load": "dotenv sourcecred load",
     "start": "dotenv sourcecred go --no-load && sourcecred serve",
     "grain": "sourcecred grain",
-    "activate": "yarn src/activate.js"
+    "activate": "node src/activate.js"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
