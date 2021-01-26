@@ -25,6 +25,7 @@ jobs:
         run: |
           yarn sourcecred go
           yarn activate
+          yarn ethAddresses
         env:
           SOURCECRED_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SOURCECRED_DISCORD_TOKEN: ${{ secrets.SOURCECRED_DISCORD_TOKEN }}
