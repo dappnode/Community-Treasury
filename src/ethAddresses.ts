@@ -15,7 +15,10 @@ const nodePrefix = sourcecred.core.graph.NodeAddress.fromParts([
 export const discordToken = process.env.SOURCECRED_DISCORD_TOKEN;
 const FILTER_TEXT = (message: Message) => /^claim to 0x[a-fA-F0-9]{40}$/.test(message.content);
 
-(async () => {
+
+
+const main = async () => {
+    
     const client = new Discord.Client();
     await client.login(discordToken);
 
@@ -33,6 +36,7 @@ const FILTER_TEXT = (message: Message) => /^claim to 0x[a-fA-F0-9]{40}$/.test(me
 
     messages.map((msg) => {
         let author_id = msg.author.id
+
         const discordIdentity = sourcecred.core.graph.NodeAddress.append(
             sourcecred.plugins.discord.declaration.memberNodeType.prefix,
             msg.author.bot ? "bot" : "user",
@@ -57,13 +61,16 @@ const FILTER_TEXT = (message: Message) => /^claim to 0x[a-fA-F0-9]{40}$/.test(me
             description: "ethereum/" + prevEthAddressAlias.length + "/" + ethAddress,
             address: address
         }
-
+        console.log("added: " + alias.description)
         ledger.addAlias(linkedAccount.identity.id, alias);
-
     });
+
     saveLedger(ledger);
-    process.exit()
-})();
+    client.destroy();
+
+};
+
+main();
 
 function delay(ms: number) {
     return new Promise(resolve => setTimeout(resolve, ms));
