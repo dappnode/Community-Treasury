@@ -13,7 +13,7 @@ const nodePrefix = sourcecred.core.graph.NodeAddress.fromParts([
 ]);
 
 export const discordToken = process.env.SOURCECRED_DISCORD_TOKEN;
-const FILTER_TEXT = (message: Message) => /^[Cc]laim to 0x[a-fA-F0-9]{40}$/.test(message.content);
+const FILTER_TEXT = (message: Message) => /^[Cc]laim to 0x[a-fA-F0-9]{40}$/.test(message.content) || /^[Uu]nclaim$/.test(message.content);
 
 const main = async () => {
     
@@ -46,7 +46,7 @@ const main = async () => {
             return;
         }
 
-        let ethAddress = msg.content.replace(/claim to /, "");
+        let ethAddress = /^[Cc]laim to 0x[a-fA-F0-9]{40}$/.test(msg.content) ? msg.content.replace(/[cC]laim to /, "") : "0x0000000000000000000000000000000000000000";
         let address = sourcecred.core.graph.NodeAddress.append(nodePrefix, author_id, ethAddress);
 
         const ethLinkedAccount = ledger.accountByAddress(address);
@@ -59,7 +59,7 @@ const main = async () => {
             description: "ethereum/" + prevEthAddressAlias.length + "/" + ethAddress,
             address: address
         }
-        console.log("added: " + alias.description)
+        console.log("added: " + alias.description + " to: " + linkedAccount.identity.name )
         ledger.addAlias(linkedAccount.identity.id, alias);
     });
 
