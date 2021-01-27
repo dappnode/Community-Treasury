@@ -13,9 +13,7 @@ const nodePrefix = sourcecred.core.graph.NodeAddress.fromParts([
 ]);
 
 export const discordToken = process.env.SOURCECRED_DISCORD_TOKEN;
-const FILTER_TEXT = (message: Message) => /^claim to 0x[a-fA-F0-9]{40}$/.test(message.content);
-
-
+const FILTER_TEXT = (message: Message) => /^[Cc]laim to 0x[a-fA-F0-9]{40}$/.test(message.content);
 
 const main = async () => {
     
