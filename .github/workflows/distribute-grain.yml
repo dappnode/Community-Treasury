@@ -10,7 +10,8 @@ on:
       # PRSs created from grain-trigger-* branches are targeted
       # on their immediate base branches, as opposed to master
       - "grain-trigger-*"
-
+  workflow_dispatch:
+  
 jobs:
   distribute-grain:
     runs-on: ubuntu-latest
