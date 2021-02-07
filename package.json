@@ -26,7 +26,8 @@
     "start": "dotenv sourcecred go --no-load && sourcecred serve",
     "grain": "sourcecred grain",
     "ethAddresses": "tsc && node dist/ethAddresses.js",
-    "activate": "node scripts/activate.js"
+    "activate": "node scripts/activate.js",    
+    "distribute": "node scripts/distribute.js"
   },
   "devDependencies": {
     "dotenv-cli": "^4.0.0",
