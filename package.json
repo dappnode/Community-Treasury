@@ -13,6 +13,7 @@
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
     "ethers": "^5.0.32",
+    "pako": "^2.0.3",
     "sourcecred": "^0.8.1",
     "sourcecred-publish-test": "^0.7.23",
     "ts-node": "^9.1.1",
@@ -26,7 +27,7 @@
     "start": "dotenv sourcecred go --no-load && sourcecred serve",
     "grain": "sourcecred grain",
     "ethAddresses": "tsc && node dist/ethAddresses.js",
-    "activate": "node scripts/activate.js",    
+    "activate": "node scripts/activate.js",
     "distribute": "node scripts/distribute.js"
   },
   "devDependencies": {
