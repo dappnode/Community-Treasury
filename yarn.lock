@@ -4202,10 +4202,10 @@ zksync-crypto@^0.5.4:
   resolved "https://registry.yarnpkg.com/zksync-crypto/-/zksync-crypto-0.5.4.tgz#6b3ca224ce35bbf1843f20ffa526651c45000e03"
   integrity sha512-E5TrDnOijfbyqt3J38iYtqsSdytB68FsEEgiTd/YPVeF6Q1Fp+4ecVlUs+FlelY/OTRpWNkSLD9HGug1GpXHcw==
 
-zksync@^0.10.7:
-  version "0.10.7"
-  resolved "https://registry.yarnpkg.com/zksync/-/zksync-0.10.7.tgz#afb12bf535f48b0da8ec3e2b047249b688f247bf"
-  integrity sha512-rQtivKfhc4nb/MxoISwkyGdtRmOlVn26KUnlek6QZz/pzgoYwSSi/cn+GEr8DONaFj9ZRz0Q6xB1c2FaMF//AQ==
+zksync@^0.10.8:
+  version "0.10.8"
+  resolved "https://registry.yarnpkg.com/zksync/-/zksync-0.10.8.tgz#0d643a78ee36a8f201df16c8ce6ccc8764cc8f92"
+  integrity sha512-rNw7WbRbyXC62vkDgDrbFC9m+jBhM02r3jQKsTwVte4nTKDSHBtaH8IbU/MiD22YYxOZZpuL7u3PDVt9eR9mqQ==
   dependencies:
     axios "^0.21.1"
     websocket "^1.0.30"
