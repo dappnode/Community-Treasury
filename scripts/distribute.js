@@ -1,4 +1,4 @@
-const sourcecred = require('sourcecred').default;
+const sourcecred = require('sourcecred').sourcecred;
 const fs = require("fs-extra")
 let zksync = require('zksync');
 let ethers = require('ethers');

@@ -2,7 +2,7 @@ import Discord, { TextChannel, Message } from "discord.js";
 import dotenv from "dotenv";
 dotenv.config();
 
-const sourcecred = require('sourcecred').default;
+const sourcecred = require('sourcecred').sourcecred;
 const fs = require("fs-extra")
 const Ledger = sourcecred.ledger.ledger.Ledger;
 const LEDGER_PATH = 'data/ledger.json';

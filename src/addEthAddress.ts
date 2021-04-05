@@ -1,4 +1,4 @@
-const sourcecred = require('sourcecred').default;
+const sourcecred = require('sourcecred').sourcecred;
 const fs = require("fs-extra")
 const Ledger = sourcecred.ledger.ledger.Ledger;
 const LEDGER_PATH = 'data/ledger.json';
