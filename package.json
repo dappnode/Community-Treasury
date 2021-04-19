@@ -12,7 +12,7 @@
     "@types/ws": "^7.4.1",
     "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
-    "ethers": "^5.1.0",
+    "ethers": "^5.1.2",
     "pako": "^2.0.3",
     "sourcecred": "^0.8.4",
     "sourcecred-publish-test": "^0.7.23",
